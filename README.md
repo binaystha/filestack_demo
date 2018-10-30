@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="logo.svg" align="center" width="100"/></p>
 <h1 align="center">Filestack Android SDK</h1>
 
@@ -186,3 +187,7 @@ export BINTRAY_API_KEY=''
 [java-sdk-ref]: https://filestack.github.io/filestack-java/
 [java-sdk]: https://github.com/filestack/filestack-java
 [webview-oauth]: https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html
+=======
+# filestack_demo
+filepicker custom dialog
+>>>>>>> c9843cb0a3ff504a319968279eca9fc6a992418d
