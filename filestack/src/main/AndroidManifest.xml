@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.filestack.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".FsActivity"
+            android:launchMode="singleTop"
+            android:label="@string/filestack__picker_title"
+            android:theme="@style/FilestackNoActionBar"
+
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="filestack"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".FsActivity1"
+            android:launchMode="singleTop"
+
+            android:theme="@style/Theme.Transparent"
+
+            >
+            <!--android:theme="@style/FilestackNoActionBar"-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="filestack"/>
+            </intent-filter>
+
+        </activity>
+
+        <service
+            android:name=".internal.UploadService"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

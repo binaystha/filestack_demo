@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="FilestackNoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/filestack__primary</item>
+        <item name="colorPrimaryDark">@color/filestack__primary_dark</item>
+        <item name="colorAccent">@color/filestack__accent</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="FilestackAppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="FilestackPopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FilestackNavItem">
+        <item name="android:checkable">true</item>
+    </style>
+</resources>
